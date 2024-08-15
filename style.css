@@ -1,0 +1,329 @@
+.container-fluid a{
+    color: antiquewhite;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 20px; /* Adjust the margin as needed */
+  }
+
+  /*
+  .img-container img {
+  
+    
+ 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   
+  }
+
+  .overlay {
+    content: '';
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    
+  }
+  
+  .overlay .btn{
+    z-index: 1;
+  }
+*/
+  .docHeader{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .docImages {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between images */
+    margin-bottom: 20px;
+}
+
+.docImages img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f8f9fa; /* Light gray background */
+
+  background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%),
+                      linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+                      linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                      radial-gradient(gray 2px, transparent 0);
+  background-size: 30px 30px, 30px 30px;
+}
+.card {
+  width: 100%;
+  max-width: 500px; /* Max width of the card */
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+  border-radius: 10px;
+  border: none; /* Removes default border */
+}
+.card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40; /* Dark gray color */
+}
+
+.cardotp{
+
+  width: 100%;
+  max-width: 500px; /* Max width of the card */
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+  border-radius: 10px;
+  border: none; /* Removes default border */
+  
+
+}
+
+.otpDiv{
+  background-color: #343a40;
+}
+
+.appointment-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a90e2;
+  padding: 20px;
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+  display: inline-block;
+}
+/*
+#homeBtn {
+  margin-top: 20px;
+
+  
+ 
+}
+  */
+
+#videos{
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+.video-player{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#user-2{
+  display: none;
+}
+
+.smallFrame{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 170px;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid #b366f9;
+  -webkit-box-shadow:3px 3px 15px -1px rgba(0,0,0,0.77);
+  box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+  z-index: 999;
+}
+
+.control-container{
+
+  background-color: rgb(179, 102, 249,.9);
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.control-container img{
+
+  height: 30px;
+  width: 30px;
+}
+
+#leave-btn{
+  background-color: rgb(255,80,80,1);
+}
+
+#controls{
+
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1em;
+}
+
+@media screen and (max-width:600px){
+
+  .smallFrame{
+    height: 80px;
+    width: 120px;
+  }
+
+  .control-container img{
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.contactPage{
+  background: linear-gradient(135deg, #4a90e2, #9013fe); /* Blue to Purple gradient */
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .formDiv {
+    padding: 10px; /* Reduce padding for medium screens */
+  }
+
+  .card {
+    max-width: 400px; /* Adjust card width for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .formDiv {
+    padding: 20px; /* Further reduce padding for small screens */
+    height: auto; /* Adjust height to auto for small screens */
+  }
+
+  .card {
+    max-width: 100%; /* Make the card fill the width of the container */
+    padding: 15px; /* Adjust padding inside the card */
+  }
+
+  .card h3 {
+    font-size: 1.2rem; /* Slightly reduce the heading size */
+  }
+
+  .mb-3.row label {
+    font-size: 0.9rem; /* Reduce label size */
+  }
+
+  .formDiv .btn {
+    width: 100%; /* Make the button fill the width on small screens */
+  }
+}
+
+#goHomeBtn {
+  padding: 10px;
+}
+
+#homeBtn {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  #homeBtn {
+    font-size: 1rem;
+    padding: 8px;
+    max-width: 50%;
+  }
+}
+  
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.img-container {
+  position: relative;
+  width: 100%; /* Make container width responsive */
+  max-width: 100%;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.img-container img {
+  width: 100%; /* Ensures the image covers the container while maintaining aspect ratio */
+  height: 400px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.overlay {
+  content: '';
+  position: absolute;
+  top: 0; /* Start the overlay at the top */
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ensure the overlay covers the entire container */
+  background-color: rgba(0, 0, 0, 0.3); /* Light black color overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures no overflow from the image */
+}
+
+.overlay .btn {
+  z-index: 1;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .overlay {
+    height: 400px; /* Adjust height for smaller screens */
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly darker overlay */
+  }
+
+  .overlay .btn {
+    font-size: 14px; /* Smaller button text on smaller screens */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    height: 400px; /* Further adjust height for very small screens */
+    background-color: rgba(0, 0, 0, 0.5); /* Even darker overlay */
+  }
+
+  .overlay .btn {
+    font-size: 12px; /* Smaller button text on very small screens */
+    padding: 6px 12px; /* Adjust button padding */
+    z-index: 1;
+  }
+}
